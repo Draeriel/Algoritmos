@@ -25,12 +25,18 @@ def less(a, b):
     # ojo a si el algoritmo de ordenacion es estable o inestable
     return a < b
 
-'''def exchange(lista, i, j):
-    '''    # intercambia dos elementos de posicion en la lista
+def exchange(lista, i, j):
+    # intercambia dos elementos de posicion en la lista
     # recibe la lista, la posicion i y la posicion j
     # devuelve None
     # comprueba que se han intercambiado los elementos
+    elementoAnteriorI = lista[i]
+    elementoAnteriorJ = lista[j]
 
+    lista[i], lista[j] = lista[j], lista[i]
+
+    if elementoAnteriorJ==lista[i] and elementoAnteriorI==lista[j]:
+        return None
 
 def isExchanged(lista, i, j):
     # comprueba si el elemento en la posicion i
