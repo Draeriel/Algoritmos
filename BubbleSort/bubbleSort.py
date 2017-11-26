@@ -18,15 +18,15 @@ def display(lista):
     plt.draw()
 
 
-'''def less(a, b):
+def less(a, b):
     # comprueba si a es menor que b
     # devuelve un boolean
     # recibe dos elementos
     # ojo a si el algoritmo de ordenacion es estable o inestable
+    return a < b
 
-
-def exchange(lista, i, j):
-    # intercambia dos elementos de posicion en la lista
+'''def exchange(lista, i, j):
+    '''    # intercambia dos elementos de posicion en la lista
     # recibe la lista, la posicion i y la posicion j
     # devuelve None
     # comprueba que se han intercambiado los elementos
