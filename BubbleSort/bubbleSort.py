@@ -57,8 +57,21 @@ def bubbleSort(lista):
     # cada vez que se intercambian dos elementos se dibuja la lista:
     # llama a display(lista)
     # devuelve None
-    # Comprueba que la lista esta ordenada'''
-				
+    # Comprueba que la lista esta ordenada
+    desordenado = True
+    while desordenado:
+        desordenado = False
+        for valor in range(len(lista)-1):
+            if less(lista[valor +1], lista[valor]):
+                exchange(lista, valor, valor +1)
+                #display(list)
+                desordenado = True
+    print(lista)			    
+    assert isSorted(lista)
+    return lista	
+
+
+
 
     			 
 
