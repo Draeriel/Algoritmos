@@ -44,10 +44,12 @@ def isExchanged(lista, i, j):
     # devuelve un boolean
     return lista[i] < lista[j]
 
-'''def isSorted(lista):
+def isSorted(lista):
     # comprueba si la lista esta oredenada
     # devuelve un booleanS
-
+    if lista == sorted(lista):
+    	return True
+    return False	
 
 def bubbleSort(lista):
     # ordena la lista segun el algoritmo de ordenacion
