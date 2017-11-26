@@ -42,9 +42,9 @@ def isExchanged(lista, i, j):
     # comprueba si el elemento en la posicion i
     # es menor que el elemento en la posicion j
     # devuelve un boolean
+    return lista[i] < lista[j]
 
-
-def isSorted(lista):
+'''def isSorted(lista):
     # comprueba si la lista esta oredenada
     # devuelve un booleanS
 
